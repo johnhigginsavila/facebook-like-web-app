@@ -1,0 +1,77 @@
+<!--Header-->
+<header layout="column" class="nav">
+    <div>
+        <div>
+            <div layout="column" class="table-container-right">
+                <table>
+                    <tbody>
+                        <form name="loginForm">
+                            <tr>
+                                <td>
+                                    <label for="email">Email or Phone</label>
+                                </td>
+                                <td>
+                                    <label for="password">Password</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input required ng-model="loginName" type="email">
+                                </td>
+                                <td>
+                                    <input required ng-model="password" type="password">
+                                </td>
+                                <td>
+                                    <md-button ng-click="login(loginName, password)">Log In</md-button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <a href="#" class="forgotAccount">Forgot account?</a>
+                                </td>
+                            </tr>
+                            <tr><span flex></span></tr>
+                            <tr><span flex></span></tr>
+                        </form>
+                    </tbody>
+                </table>
+            </div>
+            <div layout="row">
+                <h1 >
+                    <a  href="">
+                        <div class="white">
+                            facebook - dummy
+                        </div>
+                    </a>
+                </h1>
+            </div>
+
+        </div>  
+    </div>
+</header>
+
+<!--body-->
+<div layout="row" class="body">
+  <div flex="66" flex-offset="35">
+      <div layout="column" layout-align="right">
+        <h1>Create a New Account</h1>
+        <p>It's free and always will be.</p>
+          
+      </div>
+      <div>
+        <form name="signUpForm">
+          
+        </form>
+      </div>
+  </div>
+  <div flex>
+  </div>
+    <span layout="column" flex></span>
+</div>
+
+
+<!--footer-->
+<div>
+    <span class="spacer"></span>
+</div>

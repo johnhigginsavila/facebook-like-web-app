@@ -1,0 +1,51 @@
+.nav {
+    background-color: #3b5998;
+    color: #fff;
+    
+}
+
+.nav a {
+    text-decoration: none;
+    color : #8b9dc3;
+}
+
+.white {
+    color : #fff;
+}
+
+.nav  h1{
+    color : #fff;
+    margin-left: 20px;
+    margin-right: 200px;
+    
+}
+
+.table-container-right{
+    margin-top: 5px;
+    float: right;
+    display: block;
+    font-size: 11px;
+    margin-left: 200px;
+    margin-right: 100px;
+}
+
+.table-container-right tbody tr {
+    margin: 1px;
+    padding: 1px;
+}
+
+.table-container-right a:link {
+    text-decoration: none;
+    color: #8b9dc3;
+    
+}
+
+.table-container-right a:hover {
+    color: #8b9dc3;
+    text-decoration: underline;
+}
+
+.body {
+    background-color: #edf0f5;
+    padding-bottom: 300px;
+}
