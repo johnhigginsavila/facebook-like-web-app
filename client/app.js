@@ -7,6 +7,12 @@
           templateUrl:'/client/components/home/home.html',
           controller:'homeCtrl'
         })
+        .state('main',{
+          url: '/main',
+          templateUrl: '/client/components/main/main.html',
+          controller: 'mainCtrl'
+        })
+    
        
       $urlRouterProvider.otherwise('/');
     }])

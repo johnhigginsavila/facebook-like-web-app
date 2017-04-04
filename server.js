@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
-//var db = require('./server/database/database');
+var db = require('./server/database/database');
 var jwt = require('jsonwebtoken');
 
 
@@ -13,7 +13,11 @@ app.use('/client',express.static(__dirname + '/client'));
 
 
 //CONTROLLER
+var initializeDatabase = require('./server/routes/startDatabase');
+var apiUser = require('./server/routes/user');
 
+app.use('/api/initializeDatabase',initializeDatabase);
+app.use('/api/user', apiUser);
 
 //ROUTERS
 
@@ -23,6 +27,9 @@ app.get('/', function(req, res){
     res.sendFile(__dirname+'/client/index.html');
 })
 
-app.listen(5000, function(){
-    console.log("Listening on port: "+5000);
+
+db.sync().then(function(){
+    app.listen(5000, function(){
+        console.log("Listening on port: "+5000);
+    })
 })
